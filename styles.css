@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap');
+
+.flex {display: flex}
+.flex-col {flex-direction: column;}
+.justify-center {justify-content: center;}
+.items-center {align-items: center;}
+
+.rounded-md {border-radius: 20px;}
+.p-md {padding: 20px}
+.text-center {text-align: center;}
+
+.card,
+.card__content,
+.card__image {
+    max-width: 300px;
+}
+
+
+body {
+    background-color: hsl(0, 0%, 8%);
+    height: 100vh;
+}
+
+.card {
+    background-color: hsl(0, 0%, 20%);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
