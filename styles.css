@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap');
 
+:root {
+    --color-background-body: 0, 0%, 8%;
+    --color-white: 0, 0%, 100%;
+    --color-accent: 75, 94%, 57%;
+    --color-dark: 0, 0%, 12%;
+    --color-gray: 0, 0%, 20%;
+    
+
+    --ff-primary: "Inter"
+}
 .flex {display: flex}
 .flex-col {flex-direction: column;}
 .justify-center {justify-content: center;}
@@ -21,36 +31,40 @@
     max-width: 5.5rem;
     margin-bottom: 1rem;
 }
-card__buttons {
-
-}
-
-body {
-    background-color: hsl(0, 0%, 8%);
-    height: 100vh;
-}
+.card__image:focus,
+.card__caption > *:focus {
+  outline: 1px solid hsl(var(--color-accent));
+}  
 
 .card {
-    background-color:  hsl(0, 0%, 12%);
+    background-color: hsl(var(--color-dark));
 }
 
-h1, p {
-    color: white;
+.card__title, .card__description {
+    color: hsl(var(--color-white));
 }
-h3, p {
+.card__subtitle, .card__description {
     font-size: 0.9rem;
     margin-bottom: 0.8rem;
     font-weight: 400;
 }
-h1 {
+.card__title {
     font-size: 1.5rem;
     font-weight: 500;
 }
 
-h3 {
-    color: hsl(75, 94%, 57%);
+.card__subtitle {
+    color: hsl(var(--color-accent));
 }
 
+ /* .card__button {
+    background-color: hsl(var(--color-gray));
+    border: 0;
+    width: 18rem;
+    color: hsl(var(--color-white));
+    font-size: 0.9rem;
+    font-weight: 500;
+ } */
  button {
     background-color: hsl(0, 0%, 20%);
     border: 0;
@@ -68,5 +82,6 @@ h3 {
     button:hover {
         background-color:hsl(75, 94%, 57%);
         color: black;
+        cursor: pointer;
      }
  }
